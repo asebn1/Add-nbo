@@ -10,8 +10,11 @@ sample : add-nbo a.bin c.bin
 
 # example
 $ echo -n -e \\x00\\x00\\x03\\xe8 > thousand.bin
+
 $ echo -n -e \\x00\\x00\\x01\\xf4 > five-hundred.bin
+
 $ ./add-nbo thousand.bin five-hundred.bin
+
 1000(0x3e8) + 500(0x1f4) = 1500(0x5dc)
 
 ![result](https://user-images.githubusercontent.com/57438644/87287056-98c15600-c534-11ea-8a46-190e196d5c0c.PNG)
